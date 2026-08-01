@@ -21,27 +21,49 @@ Regulatory Compliance: Tracking government certifications, inspection frequencie
 The underlying dataset contains 25,000 warehouse records across 32 operational attributes:
 
 **Attribute**      - Field	Data Type	Description
+
 **Warehouse ID**  -   String	Unique identifier for each warehouse (WH_100000 to WH_124999)
+
 **WH Manager ID	String** - 	Unique employee ID of the warehouse manager
+
 **Location type**	- Categorical	Operating environment: Urban or Rural
+
 **WH capacity size**	-   Categorical	Capacity categorization: Large, Mid, Small
+
 **zone**	-  Categorical	Macro geographic zone (North, South, West, East)
+
 **WH regional zone**	-  Categorical	Granular operational zone (Zone 1 through Zone 6)
+
 **num_refill_req_l3m**	-Numeric	Count of inventory refill requests in the last 3 months
+
 **transport_issue_l1y** -	Numeric	Total transport/logistics disruptions reported in the last 1 year
+
 **Competitor in mkt**	-Numeric	Number of competing FMCG distribution centers in immediate market
+
 **retail shop num**	-  Numeric	Total retail outlets served by the warehouse
+
 **distributor num**	-   Numeric	Number of registered regional distributors associated
+
 **flood impacted**	-   Binary	Binary flag (1 = Previously flood-affected, 0 = No history)
+
 **flood proof	Binary**	-   Binary flag (1 = Certified flood-proof facility, 0 = Standard)
+
 **electric supply	Binary**  -    	Availability of uninterrupted power grid / back-up
+
 **distance from hub** -   	Numeric	Distance in kilometers from the central distribution hub
+
 **workers num** 	-  Numeric	Total workforce / employee headcount at the facility
+
 **storage_issue_reported_l3m**  -	Numeric	Count of storage-related incidents reported in the last 3 months
+
 **temp reg match**	-Binary	Presence of functional temperature-regulation machinery (1/0)
+
 **approved wh govt certificate**	-   Categorical	Government certification status (A, B, C, or pending)
+
 **wh_breakdown_l3m**  -	Numeric	Operational breakdown instances over the past 3 months
+
 **govt_check_l3m**	-Numeric	Frequency of government authority inspections in last 3 months
+
 **product wg ton**  -	Numeric	Total weight of stored/processed products (in Metric Tons)
 
 # Key Analytical Insights & Findings
