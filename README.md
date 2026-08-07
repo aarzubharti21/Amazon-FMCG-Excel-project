@@ -1,123 +1,80 @@
 # Amazon-FMCG-Excel-project
 
-## Amazon FMCG Supply Chain & Warehouse Data Analytics Dashboard
-Executive Summary
-This project presents a comprehensive end-to-end data analysis and interactive dashboard solution built for Amazon FMCG (Fast-Moving Consumer Goods) Warehouse Operations. The analysis covers a dataset of 25,000 operational warehouses, evaluating supply chain bottlenecks, storage efficiency, flood resilience, regulatory compliance, and regional capacity distribution.
+## Overview
 
-Through multi-level analytical tiers (Basic Data Exploration, Medium Operational Insights, and Advanced Statistical & Regression Modeling), this repository provides actionable intelligence to optimize inventory refill throughput, reduce storage defects, and streamline warehouse network expansion.
+I am pleased to present the Amazon FMCG Warehouse Performance Dashboard, an advanced Excel analytics project designed to transform raw warehouse operational data into meaningful business intelligence. This dashboard provides a centralized view of warehouse performance by analyzing storage operations, transportation efficiency, government compliance, workforce distribution, and operational risks. Through interactive visualizations and dynamic filtering, the project enables data-driven decision-making for supply chain managers, warehouse administrators, and business stakeholders to improve operational efficiency and inventory management.
 
-# Business Problem & Objectives
-Managing large-scale FMCG fulfillment operations requires continuous monitoring of physical infrastructure, logistics network proximity, and operational reliability. Key strategic goals addressed in this analysis include:
+## Problem Statement
 
-Capacity & Distribution Optimization: Evaluating how warehouse sizes (Large, Mid, Small) and ownership models (Company-Owned vs. Rented) affect throughput.
+The primary objective of this project was to develop a comprehensive monitoring solution for Amazon FMCG warehouse operations. The available dataset contained warehouse infrastructure details, transportation records, government inspections, storage issues, workforce information, and operational metrics, making it difficult to identify performance bottlenecks and operational risks. The project required the development of an interactive Excel dashboard capable of simplifying warehouse performance analysis while providing actionable insights for operational optimization.
 
-Risk Management & Infrastructure Assessment: Quantifying the operational impact of flood-prone locations, electric supply stability, and temperature-controlled machinery.
+## Analysis Done
 
-Root Cause Analysis of Storage Bottlenecks: Identifying key drivers behind storage issue reports and warehouse breakdowns.
+The file in which the analysis is done is Amazon FMCG Data Dashboard.xlsx
 
-Regulatory Compliance: Tracking government certifications, inspection frequencies, and structural safety standards.
+A structured data analysis and dashboard development approach was implemented to ensure accurate reporting and meaningful business insights. The analytical phases included:
 
-# Data Dictionary
-The underlying dataset contains 25,000 warehouse records across 32 operational attributes:
+-**Data Cleaning**: Cleaned the dataset by handling missing values, removing inconsistencies, correcting data types, and standardizing warehouse operational records.
 
-**Attribute**      - Field	Data Type	Description
+-**Data Modeling**: Organized warehouse information into structured tables to support efficient Pivot Tables, Pivot Charts, and dashboard reporting.
 
-**Warehouse ID**  -   String	Unique identifier for each warehouse (WH_100000 to WH_124999)
+-**Feature Engineering**: Created additional calculated columns including Government Certification Status, Storage Issue Flag, and warehouse operational classifications to simplify analysis.
 
-**WH Manager ID	String** - 	Unique employee ID of the warehouse manager
+-**Warehouse Performance Analysis**: Analyzed warehouse capacity, workforce availability, refill requests, transportation issues, and warehouse breakdown frequency to evaluate operational efficiency.
 
-**Location type**	- Categorical	Operating environment: Urban or Rural
+-**Operational Risk Assessment**: Evaluated flood impact, flood-proof infrastructure, electric supply availability, storage issues, and government inspections to identify operational risks affecting warehouse performance.
 
-**WH capacity size**	-   Categorical	Capacity categorization: Large, Mid, Small
+-**Interactive Dashboard Development**: Designed an Excel dashboard with slicers, Pivot Tables, and Pivot Charts enabling dynamic filtering across warehouse characteristics and operational metrics.
 
-**zone**	-  Categorical	Macro geographic zone (North, South, West, East)
+-**Statistical Analysis**: Performed correlation and regression analysis to understand relationships between operational variables and identify the major factors influencing warehouse performance.
 
-**WH regional zone**	-  Categorical	Granular operational zone (Zone 1 through Zone 6)
+## Dashboard
 
-**num_refill_req_l3m**	-Numeric	Count of inventory refill requests in the last 3 months
+The final deliverable consists of an interactive Excel dashboard that provides a comprehensive overview of Amazon FMCG warehouse operations through dynamic filtering and visual reporting.
 
-**transport_issue_l1y** -	Numeric	Total transport/logistics disruptions reported in the last 1 year
+## Dashboard Features
 
-**Competitor in mkt**	-Numeric	Number of competing FMCG distribution centers in immediate market
+-**Warehouse Performance Overview**: Presents key operational indicators providing a quick summary of warehouse activities and performance.
 
-**retail shop num**	-  Numeric	Total retail outlets served by the warehouse
+-**Warehouse Capacity Analysis**: Analyzes warehouse capacity distribution to identify utilization patterns and infrastructure efficiency.
 
-**distributor num**	-   Numeric	Number of registered regional distributors associated
+-**Transportation Issue Analysis**: Monitors transportation-related disruptions across warehouses, enabling logistics teams to identify operational bottlenecks.
 
-**flood impacted**	-   Binary	Binary flag (1 = Previously flood-affected, 0 = No history)
+-**Storage Issue Monitoring**: Evaluates storage-related problems reported over recent months, helping identify warehouses requiring immediate operational improvements.
 
-**flood proof	Binary**	-   Binary flag (1 = Certified flood-proof facility, 0 = Standard)
+-**Government Certification Analysis**: Compares government-certified and non-certified warehouses to evaluate regulatory compliance across warehouse operations.
 
-**electric supply	Binary**  -    	Availability of uninterrupted power grid / back-up
+-**Warehouse Breakdown Analysis**: Examines warehouse breakdown frequency to identify facilities requiring preventive maintenance and infrastructure improvements.
 
-**distance from hub** -   	Numeric	Distance in kilometers from the central distribution hub
+-**Regional Distribution Analysis**: Visualizes warehouse distribution across zones and regional zones, supporting strategic supply chain planning.
 
-**workers num** 	-  Numeric	Total workforce / employee headcount at the facility
+-**Infrastructure Analysis**: Assesses warehouse readiness based on flood impact, flood-proof facilities, temperature regulation machines, and electricity availability.
 
-**storage_issue_reported_l3m**  -	Numeric	Count of storage-related incidents reported in the last 3 months
+-**Interactive Filters**: Enables users to analyze warehouse performance dynamically using slicers for warehouse location, ownership type, certification status, flood impact, regional zone, and other operational attributes.
 
-**temp reg match**	-Binary	Presence of functional temperature-regulation machinery (1/0)
+## Recommendations
 
-**approved wh govt certificate**	-   Categorical	Government certification status (A, B, C, or pending)
+Based on the insights obtained from the dashboard, the following strategic recommendations are proposed:
 
-**wh_breakdown_l3m**  -	Numeric	Operational breakdown instances over the past 3 months
+-**Strengthen Warehouse Maintenance**: Warehouses experiencing frequent breakdowns should receive preventive maintenance to minimize operational disruptions and inventory losses.
 
-**govt_check_l3m**	-Numeric	Frequency of government authority inspections in last 3 months
+-**Reduce Transportation Issues**: Optimize transportation planning and logistics routes to reduce delays and improve warehouse replenishment efficiency.
 
-**product wg ton**  -	Numeric	Total weight of stored/processed products (in Metric Tons)
+-**Improve Storage Infrastructure**: Warehouses reporting high storage issues should upgrade storage facilities and inventory management practices to minimize product damage.
 
-# Key Analytical Insights & Findings
+-**Increase Government Compliance**: Encourage non-certified warehouses to obtain government certifications to improve operational reliability and regulatory compliance.
 
-**Capacity & Warehouse Distribution**
+-**Invest in Disaster Preparedness**: Warehouses located in flood-prone regions should be equipped with flood-proof infrastructure and contingency plans to reduce business risks.
 
-Dominant Sizes: Large warehouses account for 40.68% of total facilities, closely followed by Mid-sized facilities at 40.08%, while Small facilities represent 19.24%.
+-**Enhance Workforce Planning**: Allocate workforce based on warehouse capacity and operational workload to maximize productivity and improve warehouse efficiency.
 
-Refill Volumes: Large and Mid-sized facilities handle over 80% of total refill requests across the network, emphasizing their role as core bulk hubs.
+-**Strengthen Infrastructure**: Ensure all warehouses maintain uninterrupted electric supply and temperature regulation systems to protect FMCG inventory quality.
 
-**Operational Correlation Analysis**
+-**Leverage Data-Driven Decision Making**: Continuously monitor warehouse KPIs through the dashboard to identify operational trends, optimize resource allocation, and improve overall supply chain performance.
 
-Warehouse Age vs. Storage Issues: A strong negative correlation (r≈−0.629) was identified between facility establishment year  and reported storage issues (storage_issue_reported_l3m). Modern/newer facilities feature significantly fewer storage failures, pointing to infrastructure aging in legacy units.
+## Author
+Aarzu Bharti
 
-**Workforce Scale vs. Storage Issues**
 
-The correlation between workers num and storage issues is near zero (r≈−0.0087), showing that headcount alone does not mitigate operational storage errors; process efficiency and facility quality are primary drivers.
 
-**Statistical & Regression Modeling**
 
-Linear Regression Assessment: Multiple regression models were fitted to evaluate product volume (product wg ton) and operational breakdowns. The weak overall explanatory power (R 2≈0.00028) indicates that tonnage is driven primarily by external order demand rather than internal physical facility age or worker count alone.
-
-# Dashboard Layout & Interactive Features
-
-The Excel Dashboard (dashboard for amazon FMCG sheet) integrates dynamic Pivot Tables, Slicers, and Visualizations allowing operational managers to perform cross-filtering across multiple dimensions:
-
-## Summary Key Metrics
-
-**Total Warehouse Count**   (25,000 facilities)
-
-**Total Workforce Headcount & Average Workforce per Facility**
-
-**Network Flood-Proofing Coverage Ratio**
-
-**Government Compliance Grade Distribution**
-
-## Analysis Views
-
-**Zone-wise Warehouse Breakdown** : Visualizing distribution across macro zones (North, South, East, West).
-
-**Capacity vs. Ownership Model** : Comparing company-owned vs. rented facilities grouped by capacity size.
-
-**Storage Issues & Breakdown Heatmap** : Identifying high-risk regional zones requiring structural upgrades.
-
-## Interactive Slicers
-
-Filter by WH_regional_zone
-
-Filter by Location_type (Urban / Rural)
-
-Filter by wh_owner_type (Company Owned / Rented)
-
-# Conclusion
-Legacy Warehouse Modernization: Prioritize capital expenditure updates on facilities built before 2010, as the data demonstrates an inverse relationship between facility age and storage issues (r=−0.629).
-
-## AUTHOR
-## AARZU BHARTI
