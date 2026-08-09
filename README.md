@@ -10,7 +10,7 @@ The primary objective of this project was to develop a comprehensive monitoring 
 
 ## Analysis Done
 
-The file in which the analysis is done is Amazon FMCG Data Dashboard.xlsx
+> The file in which the analysis is done is **Amazon FMCG Data Dashboard.xlsx**
 
 A structured data analysis and dashboard development approach was implemented to ensure accurate reporting and meaningful business insights. The analytical phases included:
 
